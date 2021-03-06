@@ -1,0 +1,30 @@
+{
+  "name": "cypress-basic-framework",
+  "version": "1.0.0",
+  "description": "A basic framework to demonstrate cypress features and testing walkthrough",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy.chrome": "npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser chrome",
+    "cy.edge":"npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser edge",
+    "cy.electron":"npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser electron",
+    "cy.headless": "npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anshyadav/Cypress-basic-framework.git"
+  },
+  "author": "Ansh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anshyadav/Cypress-basic-framework/issues"
+  },
+  "homepage": "https://github.com/anshyadav/Cypress-basic-framework#readme",
+  "dependencies": {
+    "cypress": "^6.6.0",
+    "mailhog": "^4.15.0"
+  },
+  "devDependencies": {
+    "cypress-mailosaur": "^2.1.2"
+  }
+}
