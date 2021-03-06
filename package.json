@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy.chrome": "npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser chrome",
-    "cy.edge":"npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser edge",
-    "cy.electron":"npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js --browser electron",
-    "cy.headless": "npx cypress run --spec ./cypress/integration/shop-tools-qa/place_order_spec.js"
+    "cy.chrome": "npx cypress run --spec ./cypress/integration/shop-tools-qa/*.js --browser chrome --record --key de77f2ab-9d9d-4aa5-aff1-17a348e93a59",
+    "cy.edge":"npx cypress run --spec ./cypress/integration/shop-tools-qa/*.js --browser edge --record --key de77f2ab-9d9d-4aa5-aff1-17a348e93a59",
+    "cy.electron":"npx cypress run --spec ./cypress/integration/shop-tools-qa/*.js --browser electron --record --key de77f2ab-9d9d-4aa5-aff1-17a348e93a59",
+    "cy.headless": "npx cypress run --spec ./cypress/integration/shop-tools-qa/*.js --record --key de77f2ab-9d9d-4aa5-aff1-17a348e93a59",
+    "cy.open": "npx cypress open"
   },
   "repository": {
     "type": "git",

@@ -1,13 +1,22 @@
 {
-    "baseUrl": "https://shop.demoqa.com/",
-    "testFiles": "**/*.*",
-    "$schema": "https://on.cypress.io/cypress.schema.json",
-    "env": {
-        "MAILOSAUR_API_KEY": "ked0Bw9Op1N36C3"
-    },
-    "retries": {
-        "openMode": 2,
-        "runMode": 2
-    }
-
+  "baseUrl": "https://shop.demoqa.com/",
+  "watchForFileChanges": true,
+  "testFiles": "**/*.*",
+  "viewportWidth": 1080,
+  "waitForAnimations": true,
+  "defaultCommandTimeout": 5000,
+  "pageLoadTimeout": 80000,
+  "video": true,
+  "execTimeout": 60000,
+  "screenshotOnRunFailure": true,
+  "videoCompression": 32,
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "env": {
+    "MAILOSAUR_API_KEY": "ked0Bw9Op1N36C3"
+  },
+  "retries": {
+    "openMode": 2,
+    "runMode": 2
+  },
+  "projectId": "mddnyd"
 }

@@ -14,12 +14,21 @@ import 'cypress-mailosaur'
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
+Cypress.Commands.add("testSetUp", () => {
+    cy.visit('https://shop.demoqa.com/');
+    cy.log('Webiste loaded.');
+    cy.clearCookies({log:true});
+    
+});
+
 Cypress.Commands.add("visitHome", () => {
     cy.visit('https://shop.demoqa.com/');
+    cy.log('Webiste loaded.');
 });
 
 Cypress.Commands.add("visitCart", () => {
     cy.visit('https://shop.demoqa.com/cart/');
+    cy.log('Webiste loaded.');
 });
 
 Cypress.Commands.add('deleteAllMailosaurMessages', () => {

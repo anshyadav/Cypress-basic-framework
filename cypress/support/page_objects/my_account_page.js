@@ -29,6 +29,7 @@ export async function registerUser() {
         email: email,
         password: password
     })
+    cy.wait(5000);
     cy.verifySubjectOfMailosaurMessage("Your ToolsQA Demo Site account has been created!");
 }
 
@@ -49,6 +50,7 @@ export function userLogin() {
         cy.get(loginRememberMe).click();
         cy.get(loginButton).click();
     });
+    cy.title().should('have.text','My Account – ToolsQA Demo Site');
 }
 
 //verify all the tabs of my account. Here using should function instead of then because then function will not retry but should will.

@@ -12,7 +12,7 @@ import {clickBackToShop} from '../../support/page_objects/cart_page.js'
 describe('Cart Functionality', () => {
 
     beforeEach(() => {
-        cy.visitHome();
+        cy.testSetUp();
     })
 
     before(()=>{
