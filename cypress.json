@@ -5,7 +5,6 @@
     "env": {
         "MAILOSAUR_API_KEY": "ked0Bw9Op1N36C3"
     },
-    
     "retries": {
         "openMode": 2,
         "runMode": 2
