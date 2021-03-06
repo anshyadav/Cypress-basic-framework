@@ -50,7 +50,7 @@ export function userLogin() {
         cy.get(loginRememberMe).click();
         cy.get(loginButton).click();
     });
-    cy.title().should('have.text','My Account – ToolsQA Demo Site');
+    cy.title().should('eq','My Account – ToolsQA Demo Site');
 }
 
 //verify all the tabs of my account. Here using should function instead of then because then function will not retry but should will.
