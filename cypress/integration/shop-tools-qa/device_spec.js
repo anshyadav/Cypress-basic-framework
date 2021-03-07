@@ -1,6 +1,6 @@
 describe('Device Based Tests',()=>{
     beforeEach(() => {
-        cy.testSetUp();
+        cy.visitHome();
     })
 
     before(()=>{

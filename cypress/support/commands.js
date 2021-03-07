@@ -15,7 +15,7 @@ import 'cypress-mailosaur'
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 Cypress.Commands.add("testSetUp", () => {
-    cy.visit('https://shop.demoqa.com/');
+    cy.visit('https://shop.demoqa.com/').screenshot({capture:'fullPage'});
     cy.log('Webiste loaded.');
     cy.clearCookies({log:true});
     
