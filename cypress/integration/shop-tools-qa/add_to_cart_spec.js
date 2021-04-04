@@ -12,7 +12,7 @@ import {clickBackToShop} from '../../support/page_objects/cart_page.js'
 describe('Cart Functionality', () => {
 
     beforeEach(() => {
-        cy.visitHome();
+        cy.testSetUp();
     })
 
     before(()=>{
@@ -23,12 +23,6 @@ describe('Cart Functionality', () => {
         cy.log("All tests completed");
     })
 
-    it('Checking empty cart',()=>{
-
-        cy.visitCart();
-        clickBackToShop();
-    })
-
     it('Adding a product to cart', () => {
 
         searchProduct("Jeans");
@@ -37,4 +31,9 @@ describe('Cart Functionality', () => {
         clickRecProduct();
     })
 
+    it('Checking empty cart',()=>{
+
+        cy.visitCart();
+        clickBackToShop();
+    })
 })
